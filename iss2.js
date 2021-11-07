@@ -5,7 +5,7 @@ const request = require('request');
  };
      
   const fetchCoordsByIP = function (body) { 
-    const ip = Json.parse(body).ip; 
+    const ip = JSON.parse(body).ip; 
     return request(`https://api.ipify.org?format=json/${ip}`);
   };
 
